@@ -1,0 +1,65 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		//- meta(name='viewport',content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+		title Meta
+		//- link(rel='shortcut icon' href='../img/logo.png')
+		link(rel='stylesheet',href='../css/main.css')
+	body
+		include head.jade
+		div.baglun
+			div.baginner
+				ul
+					if(data.img)
+						-each imgs in data.img
+							li.fl
+								a(href="#").block
+									img(src='#{imgs.src}')
+				ol
+					li.fl.btn.active
+					li.fl.btn
+					li.fl.btn
+		div.bagsbox
+			div.bagsinner.auto
+				div.bagbox.auto
+					p 双肩包系列
+					ul
+						if(data.double)
+							-each db in data.double
+								li.fl
+									a(href="javascript:void(0);").block
+										img(src="#{db.img}", alt="")
+									div.pricebox
+										a(href="#") #{db.name}
+										span  - 
+										span #{db.price}
+				div.bagbox.auto
+					p  单肩包系列
+					ul
+						if(data.single)
+							-each sg in data.single
+								li.fl
+									a(href="javascript:void(0);").block
+										img(src="#{sg.img}", alt="")
+									div.pricebox
+										a(href="javascript:void(0);") #{sg.name}
+										span  - 
+										span #{sg.price}
+				div.bagbox.auto
+					p  洗漱包系列
+					ul
+						if(data.wash)
+							-each ws in data.wash
+								li.fl
+									a(href="javascript:void(0);").block
+										img(src="#{ws.img}", alt="")
+									div.pricebox
+										a(href="javascript:void(0);") #{ws.name}
+										span  - 
+										span #{ws.price}
+
+		include foot.jade
+script(src='http://libs.baidu.com/jquery/2.1.4/jquery.min.js')
+script(src='../js/homepage.js')
+script(src='../js/head.js')

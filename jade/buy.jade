@@ -1,0 +1,78 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		//- meta(name='viewport',content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+		title Meta
+		//- link(rel='shortcut icon' href='../img/logo.png')
+		link(rel='stylesheet',href='../css/main.css')
+	body
+		include head.jade
+		div.buybox
+			div.goodsbox.auto
+				div.goodsdetails.fl
+					div.biggoods.fl
+						img(src="", alt="")
+						div.turnbig
+					div.big
+						img(src="", alt="")
+					ul.fr
+						if(data.goods)
+							-each good in data.goods
+								li
+									img(src="#{good.src}", alt="")
+				div.datail.fl
+					h1 麦塔帆布双肩包
+					h2 ￥349
+					h3.auto 
+						em 传统零售店售价￥1200
+					div.color.auto
+						p 颜色
+						div.selectcolor
+							a(href="javascript:void(0);").block
+								div.colorleft.fl
+									img(src="../imgs/color.png", alt="")
+								p.fl
+									span.block 斜纹牛仔布
+									span.block 黑色牛皮
+						div.putincar
+							a(href="javascript:void(0);").block 加入购物袋
+						div.free
+							a(href="javascript:void(0);") 免邮费
+			div.introduce.auto
+				div.style.fl
+					p.title STYLE DETAILS
+					p.last Our popular Snap Backpack now in a beartiful,sturdy twill fabrication.
+					ul
+						li 100% cotton twill exterlor
+						li Leather detailing
+						li 100% cotton twill fused lining
+						li Stop clean only 
+				div.size.fl
+					p.title SIZE DETAILS
+					ul
+						li Padded interior laptop compartment fits 15`` Macbook
+						li 13`` L x`` W x 18`` H
+						li 
+							span Questions?Email 
+							span support@wverlane.com
+							span .
+				div.factory.fl
+					p.title THE FACTORY
+					p 
+						span Mr.Hong opened this factory in Dongguan,<br>China over 30 years ago.Today he<br> manufactures travel accessories for some of the largest brands in the world.We`ve visited this factory many times in the past few years and have built a strong relationship with Mr.Hong,whom we now consider both a friend and an adviser.
+						a(href="javascript:void(0);") View more.
+			div.fromprople.auto
+				p FROM THE PEOPLE
+				ul
+					if(data.people)
+						-each every in data.people
+							li
+								a(href="#").block
+									img(src="#{every.src}", alt="")
+			div.bg.auto
+				img(src="../imgs/bg.png", alt="")
+		include foot.jade
+script(src='http://libs.baidu.com/jquery/2.1.4/jquery.min.js')
+script(src='../js/buy.js')
+script(src='../js/head.js')

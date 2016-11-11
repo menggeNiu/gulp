@@ -1,0 +1,30 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		//- meta(name='viewport',content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+		title Meta
+		//- link(rel='shortcut icon' href='../img/logo.png')
+		link(rel='stylesheet',href='../css/main.css')
+	body
+		include head.jade
+		div.map
+			a(href="factorygo.html") META搜集世界范围内的优秀工厂
+		div.searchus
+			div.title
+				a(href="factorygo.html") 搜索我们的工厂
+			div.dong
+				a(href="factorygo.html").block
+					ul
+						li.fl
+							img(src="../imgs/factory1.png", alt="")
+						li.fl
+							img(src="../imgs/factory2.png", alt="")
+						li.fl
+							img(src="../imgs/factory3.png", alt="")
+						li.fl
+							img(src="../imgs/factory4.png", alt="")
+		include foot.jade
+script(src='http://libs.baidu.com/jquery/2.1.4/jquery.min.js')
+script(src='../js/factory.js')
+script(src='../js/head.js')

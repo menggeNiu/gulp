@@ -1,0 +1,399 @@
+@color:rgb(83, 83, 83);
+@bordercolor:rgb(229, 229, 229);
+.headwrap{
+	padding-top: 20px;
+	font-family: '华文仿宋';
+	.inner{
+		height: 100%;
+		margin-bottom: 61px;
+		.join{
+			margin-top: 9px;
+			margin-left: 50px;
+			a{
+				font-size: 20.83px;
+				color: @color;
+			}
+		}
+		.login{
+			font-size: 14.58px;
+			color: @color;
+			margin-top: 9px;
+			a{
+				color: @color;
+			}
+		}
+		.shoppingbag{
+				position: relative;
+				width: 205px;
+				height: 45px;
+				cursor: pointer;
+			.shopbagup{
+				position: absolute;
+				font-size: 14.58px;
+				box-sizing: border-box;
+				width: 205px;
+				height: 45px;
+				padding-top: 9px;
+				padding-left: 38px;
+				
+				background: white;
+				
+			}
+			.shopbagup1{
+				border:2px solid @bordercolor;
+				border-top: none;
+				z-index: 20;
+				border-bottom: none;
+			}
+			span:first-child+span{
+				position: absolute;
+				width: 34px;
+				height: 39px;
+				top: 0;
+				background: url(../imgs/shopbg.png);
+				left: 126px;
+			}
+			.shopcar1{
+				width: 495px;
+				height: 200px;
+				border: 2px solid @bordercolor;
+				position: absolute;
+				top: 43px;
+				z-index:10;
+				right: 0;
+				background: #fff;
+			}
+		}
+		.headmiddle{
+			// width: 1346px;
+			padding-top: 91px;
+			height: 69px;
+			.midbox{
+				width: 240px;
+				height: 70px;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.headdown{
+			margin-top: 47px;
+			ul{
+				width: 745px;
+				display: flex;
+				justify-content:space-between;
+				li{
+					a{
+						font-size: 20.83px;
+						color: @color;
+					}
+				}
+			}
+		}
+		.headdowns{
+			margin-top: 47px;
+			ul{
+				width: 869px;
+				display: flex;
+				justify-content:space-between;
+				li{
+					text-align: center;
+					color: #a2a1a1;
+					div:first-child{
+						position: relative;
+						height: 29px;
+						margin-bottom: 14px;
+						span{
+							position: absolute;
+							width: 29px;
+							height: 29px;
+							border-radius: 50%;
+							left: 50%;
+							top: 50%;
+							line-height: 29px;
+							transform:translate(-50%,-50%);
+							background: #b1afaf;
+							color: rgb(254, 249, 249);
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.sure{
+		margin-bottom: 27px;
+		p{
+			text-align: center;
+			font-size: 37.5px;
+			font-family: my;
+			letter-spacing: 5px;
+			margin-bottom: 16px;
+			height: 40px;
+		}
+	}
+}
+.loginpop{
+	min-width: 1300px;
+	width: 100%;
+	left:0;
+	top: 0;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	display: none;
+	.firstres{
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 200px;
+		transform:translateX(-50%);
+		.firstup{
+			width: 600px;
+			padding-top: 120px;
+			box-sizing: border-box;
+			background: #fff;
+			height: 693px;
+			margin-bottom: 14px;
+			h1{
+				text-align: center;
+				margin-bottom: 55px;
+			}
+			.intro{
+				text-align: center;
+				font-size: 18.75px;
+				margin-bottom: 5px;
+			}
+			.last{
+				margin-bottom: 24px;
+			}
+			.btn{
+				width: 521px;
+				.emailspan{
+					font-size: 18.75px;
+					margin-bottom: 8px;
+				}
+				input{
+					width: 517px;
+					height: 38px;
+					outline: 0;
+					border: 2px solid #e3e3e3;
+					margin-bottom: 18px;
+				}
+				a{
+					height: 49px;
+					text-align: center;
+					position: relative;
+					font-size: 20.83px;
+					line-height: 46px;
+					margin-bottom: 19px;
+				}
+				.logospan1{
+					position: absolute;
+					width: 38px;
+					height: 30px;
+					background: url(../imgs/bologo.png) no-repeat;
+					background-size: 100% 100%;
+					left: 25px;
+					top: 9px;
+				}
+				.logospan2{
+					position: absolute;
+					width: 30px;
+					height: 33px;
+					background: url(../imgs/qqlogo.png) no-repeat;
+					background-size: 100% 100%;
+					left: 26px;
+					top: 6px;
+				}
+				.creat{
+					background: #c4a9b8;
+					color: #fff;
+				}
+				.weibo{
+					background: #f1ead8;
+					color: #000;
+				}
+				.qq{
+					height: 40px;
+					width: 515px;
+					border:3px solid #e3e3e3;
+					color: #000;
+				}
+			}
+		}
+		.firstdown{
+			a{
+				height: 55px;
+				background: #000000;
+				text-decoration: underline;
+				text-align: center;
+				line-height: 58px;
+				color: #fff;
+			}
+		}
+	}
+	.secondres{
+		display: none;
+		position: absolute;
+		width: 596px;
+		height: 582px;
+		box-sizing: border-box;
+		padding-top: 39px;
+		left: 50%;
+		transform:translateX(-50%);
+		top: 250px;
+		background: #fff;
+		h1{
+			text-align: center;
+			font-size: 33.33px;
+			margin-bottom: 108px;
+		}
+		.box{
+			width: 521px;
+			margin-bottom: 25px;
+			span{
+				font-size: 20.83px;
+				margin-bottom: 10px;
+			}
+			input{
+				height: 38px;
+				width: 517px;
+				border:2px solid #e3e3e3;
+				outline: 0;
+			}
+		}
+		.loading{
+			a{
+				width: 521px;
+				height: 48px;
+				background: #c4a9b8;
+				text-align: center;
+				line-height: 48px;
+				font-size: 25px;
+				color: #fff;
+			}
+		}
+	}
+	.goto{
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: 200px;
+		transform:translateX(-50%);
+		.loginin{
+			width: 601px;
+			height: 693px;
+			background: #fff;
+			box-sizing: border-box;
+			margin-bottom: 15px;
+			padding-top: 46px;
+			.titlepp{
+				font-size: 20px;
+				text-align: center;
+				margin-bottom: 62px;
+			}
+			.metabox{
+				width: 163px;
+				height: 47px;
+				margin-bottom: 52px;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.loginbox{
+				width: 522px;
+				height: 46px;
+				box-sizing: border-box;
+				position: relative;
+				line-height: 46px;
+				text-align: center;
+				font-size: 18.75px;
+				color: #000;
+				span:first-child{
+					position: absolute;
+				}
+				input{
+					width: 518px;
+					height: 42px;
+					border:2px solid #e3e3e3;
+					outline: 0;
+				}
+			}
+			.loginbox1{
+				background: #f1ead8;
+				margin-bottom: 19px;
+				span:first-child{
+					width: 38px;
+					height: 29px;
+					top: 9px;
+					left: 25px;
+					background: url(../imgs/bologo.png) no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+			.loginbox2{
+				border:2px solid #e1e1e1;
+				margin-bottom: 26px;
+				span:first-child{
+					width: 30px;
+					height: 32px;
+					top: 6px;
+					left: 25px;
+					background: url(../imgs/qqlogo.png) no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+			.or{
+				font-size: 25px;
+				margin-bottom: 19px;
+				text-align: center;
+			}
+			.div{
+				width: 522px;
+				span{
+					margin-bottom: 7px;
+				}
+			}
+			.email{
+				.loginbox3{
+					margin-bottom: 25px;
+				}
+			}
+			.password{
+				margin-bottom: 14px;
+			}
+			.logingo{
+				a{
+					width: 522px;
+					height: 49px;
+					background: #c4a9b8;
+					text-align: center;
+					line-height: 49px;
+					color: #f1ecef;
+					margin-bottom: 25px;
+				}
+			}
+			.callback{
+				text-align: center;
+				a{
+					font-size: 16.67px;
+					color: #000;
+				}
+			}
+		}
+		.zhucea{
+			a{
+				width: 601px;
+				height: 55px;
+				line-height: 55px;
+				text-align: center;
+				background: #000;
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+}

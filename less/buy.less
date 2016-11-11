@@ -1,0 +1,241 @@
+@color:rgb(83, 83, 83);
+.buybox{
+	width: 100%;
+	margin-top: 114px;
+	.goodsbox{
+		width: 1334px;
+		height: 576px;
+		margin-bottom: 86px;
+		.goodsdetails{
+			width: 713px;
+			height: 576px;
+			position: relative;
+			.biggoods{
+				width: 589px;
+				height: 576px;
+				position: relative;
+				left: 0;
+				top: 0;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				.turnbig{
+					width: 250px;
+					height: 250px;
+					background-image: -webkit-linear-gradient(top,black 50%,transparent 50%),-webkit-linear-gradient(left,black 50%,transparent 50%); 
+					background-size: 2px 2px;
+					opacity: 0.3;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					display: none;
+				}
+			}
+			.biggoods:hover{
+				cursor: move;
+			}
+			.big{
+				position: absolute;
+				left: 612px;
+				width: 660px;
+				height: 570px;
+				background: red;
+				display: none;
+				overflow: hidden;
+				img{
+					width: 1500px;
+					height: 1150px;
+					position: absolute;
+				}
+			}
+			ul{
+				width: 102px;
+				li{
+					width: 98px;
+					height: 98px;
+					border:2px solid #ebebeb;
+					margin-bottom: 16px;
+					cursor: pointer;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				li:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.datail{
+			margin-left: 119px;
+			h1{
+				font-family: my;
+				letter-spacing: 15px;
+				font-size: 50px;
+				margin-bottom: 15px;
+			}
+			h2{
+				text-align: center;
+				letter-spacing: 13px;
+				margin-bottom: 22px;
+			}
+			h3{
+				width: 218px;
+				text-align: center;
+				border-bottom: 1px solid black;
+				letter-spacing: 4px;
+				font-size: 16px;
+				margin-bottom: 115px;
+			}
+			.color{
+				width: 267px;
+				p{
+					text-align: center;
+					margin-bottom: 11px;
+				}
+				.selectcolor{
+					width: 266px;
+					height: 78px;
+					box-sizing: border-box;
+					padding-top: 13px;
+					padding-left: 14px;
+					border:2px solid #c7c8c8;
+					margin-bottom: 34px;
+					a{
+						height: 100%;
+						.colorleft{
+							width: 49px;
+							height: 49px;
+							box-sizing: border-box;
+							border: 2px solid #878787;
+							padding:2px;
+							img{
+								width: 100%;
+								height: 100%;
+							}
+						}
+						p{
+							margin-left: 18px;
+							margin-top: 6px;
+							text-align: left;
+							font-size: 16.67px;
+							color: @color;
+							font-family: my;
+							span:first-child{
+								margin-bottom: 5px;
+							}
+						}
+					}
+				}
+				.putincar{
+					margin-bottom: 24px;
+					a{
+						height: 67px;
+						line-height: 67px;
+						background: #9d6f89;
+						text-align: center;
+						color: #fff;
+						font-size: 20.83px;
+					}
+				}
+				.free{
+					text-align: center;
+					a{
+						color: @color;
+						font-size: 16.67px;
+					}
+				}
+			}
+		}
+	}
+	.introduce{
+		width: 1334px;
+		height: 309px;
+		overflow: hidden;
+		font-family: Bookman Old Style;
+		font-size: 16.67px;
+		.title{
+			font-weight: 100;
+			letter-spacing: 2px;
+			margin-bottom: 16px;
+		}
+		ul{
+				margin-top: 15px;
+				list-style: inside;
+				li{
+					margin-bottom: 22px;
+
+				}
+			}
+		.style{
+			width: 330px;
+			margin-right: 104px;
+			line-height: 20.83px;
+			.last{
+				line-height: 30px;
+			}
+			
+		}
+		.size{
+			width: 378px;
+			margin-right: 52px;
+			li{
+				width: 378px;
+				line-height: 30px;
+				margin-bottom: 5px;
+			}
+			li:last-child span:first-child+span{
+				color: #efb096;
+			}
+		}
+		.factory{
+			width: 379px;
+			font-size: 17px;
+			p:last-child{
+				line-height: 30px;
+				a{
+					color: #efb096;
+				}
+			}
+		}
+	}
+	.fromprople{
+		width: 1317px;
+		border-top: 2px solid #efefef;
+		padding-top: 24px;
+		P{
+			font-family: Bookman Old Style;
+			text-align: center;
+			margin-bottom: 21px;
+			font-size: 16.67px;
+		}
+		ul{
+			height: 237px;
+			display: flex;
+			justify-content:space-between;
+			margin-bottom: 40px;
+			li{
+				width: 233px;
+				height: 233px;
+				border: 2px solid #e8e8e9;
+				a{
+					height: 100%;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	.bg{
+		width: 1314px;
+		height: 797px;
+		margin-bottom: 60px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

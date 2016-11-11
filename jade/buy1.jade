@@ -1,0 +1,106 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		//- meta(name='viewport',content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+		title Meta
+		//- link(rel='shortcut icon' href='../img/logo.png')
+		link(rel='stylesheet',href='../css/main.css')
+	body
+		include head1.jade
+		div.buy1box
+			div.buy1inner.auto
+				div.leftbox.fl
+					div.up
+						div.up1
+							div.box.box1
+								div.left.fl
+									span.block 姓名
+									input(type="text").name
+								div.right.fr
+									span.block 电话
+									input(type="text").company
+							div.box.box2
+								span.block 街道地址
+								input(type="text").first.street1
+								input(type="text").street2
+							div.box.box1
+								div.left.fl
+									span.block 城市
+									input(type="text").city
+								div.right.fr
+									span.block 国家
+									input(type="text").country
+							div.box.box1
+								div.left.fl
+									span.block 省
+									input(type="text").province
+								div.right.fr
+									span.block 邮政编码
+									input(type="text").code
+							div.makesure
+								div.fl
+									a(href="javasrcipt:void(0);").return.block 返回
+								div.fr
+									a(href="javasrcipt:void(0);").continue.block 继续
+									a(href="")
+						div.up2
+							p.songad 送货地址
+							p.songname
+							p.songcall
+								span 电话：
+								span.call
+							p.songdizhi
+							div.other
+								a(href="javasrcipt:vodi(0);") 选择其他收货地址
+
+					div.down
+						p 即将送货
+						p 以下商品即将寄出
+						ul
+							if(data.bags)
+								-each bag in data.bags
+									li
+										div.fl.imgbox
+											img(src="#{bag.src}", alt="")
+										div.fl.content
+											div.name
+												span #{bag.name}
+											table
+												tr
+													th 尺码
+													th 数量
+													th 总价
+												tr
+													td #{bag.size}
+													td
+														div.num
+															span.block.minus -
+															span.block.numspan #{bag.num}
+															span.block.plus +
+													td
+														span ￥
+														span.tolprice #{bag.total}
+				div.rightright.fr
+					div.rightbox
+						ul
+							li 订单总计
+							li
+								span 小计
+								span ￥349
+							li
+								span 运费
+								span ￥20
+							li
+								span 免运费
+								span ￥20
+							li
+								span 总计
+								span ￥349
+					div.pay
+						a(href="javasrcipt:void(0);").block.bao 支付宝支付
+						a(href="javasrcipt:void(0);").block.weixin 微信支付
+		include foot.jade
+script(src='http://libs.baidu.com/jquery/2.1.4/jquery.min.js')
+script(src='../js/buy1.js')
+script(src='../js/head.js')

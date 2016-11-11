@@ -1,0 +1,18 @@
+{
+	"data":{
+		"goods":[
+			{"src":"../imgs/big.png"},
+			{"src":"../imgs/big2.png"},
+			{"src":"../imgs/big3.png"},
+			{"src":"../imgs/big4.png"},
+			{"src":"../imgs/big5.png"}
+		],
+		"people":[
+			{"src":"../imgs/p1.png"},
+			{"src":"../imgs/p2.png"},
+			{"src":"../imgs/p3.png"},
+			{"src":"../imgs/p4.png"},
+			{"src":"../imgs/p5.png"}
+		]
+	}
+}

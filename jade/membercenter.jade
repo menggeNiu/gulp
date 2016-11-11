@@ -1,0 +1,140 @@
+doctype
+html
+	head
+		meta(charset='utf-8')
+		//- meta(name='viewport',content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+		title Meta
+		//- link(rel='shortcut icon' href='../img/logo.png')
+		link(rel='stylesheet',href='../css/main.css')
+	body
+		include head.jade
+		div.membercenter
+			div.centerbox
+				div.list.fl
+					ul
+						li
+							a(href="javascript:void(0);") 我的账户
+						li
+							a(href="javascript:void(0);") 我的订单
+						li
+							a(href="javascript:void(0);") 订单退换
+						li
+							a(href="javascript:void(0);") 收货地址
+						li
+							a(href="javascript:void(0);") 退出
+				div.listcontent.fl
+					div.content.content1
+						p 编辑您的账户信息
+						div.name.box
+							span.block 姓名
+							input(type="text")
+						div.email.box
+							span.block 邮箱地址
+							input(type="email")
+						div.password.box
+							span.block 输入新密码
+							input(type="password")
+						div.sex
+							label(for="man") 男
+							input(type="checkbox" id='man')
+							label(for="") 女
+							input(type="checkbox" id='woman')
+						div.keep
+							a(href="javascript:void(0);").block 保存
+					div.content.content2
+						p 订单信息
+						table
+							tr
+								th 日期
+								th 收件人
+								th 详细内容
+								th 金额
+							tr
+								td 
+									span.block 2015/07/20
+								td
+									span.membername.block 王楠
+									p.address 上海市长宁区天山路1726弄1号403 200050
+								td
+									div
+										span 订单编号：
+										span.num R1234567
+									div
+										span 发货日期：
+										span.date 2015/07/21
+									div
+										span 快递单号：
+										span.ordernum 12345678X
+										a(href="javascript:void(0);").followorder
+											em 追踪订单
+									ul
+										li （1）麦塔帆布双肩包-灰色 
+										li （2）麦塔帆布单肩包-棕色 
+								td
+									span.price ￥586
+					div.content.content3
+						p 管理，添加新的收货地址
+						ul.adul
+							li.fl
+								div.adname
+									span.fl 王楠
+									i.fr X
+								div.adad
+									span.block 上海市长宁区 天山路1726弄1号403 200050
+									span.block （默认地址）
+						div.addnew
+							a(href="javascript:void(0);").block 添加新地址
+		div.popmenu
+			div.pop
+				i
+				div.poptitle 添加新地址
+				div.popdiv.auto
+					div.left.fl
+						span.block 收货人姓名
+						input(type="text")
+					div.right.fr
+						span.block 公司
+						input(type="text")
+				div.popdiv.auto.address
+					span.block 收货地址
+					input(type="text").first
+					input(type="text")
+				div.popdiv.auto
+					div.left.fl
+						span.block 城市
+						input(type="text")
+					div.right.fr
+						span.block 国家
+						div.ctselect
+							div.ulbox.fl
+								div Angola 安哥拉
+								ul.fl
+									if(data.country)
+										-each ct in data.country
+											li #{ct.country}
+							div.fr.btn
+								div
+				div.popdiv.auto
+					div.right.fl
+						span.block 省份
+						div.prselect
+							div.ulbox.fl
+								div 北京
+								ul.fl
+									if(data.province)
+										-each pr in data.province
+											li #{pr.province}
+							div.fr.btn
+								div
+					div.left.fr
+						span.block
+						input(type="text")
+				div.del.auto
+					div.delleft.fl
+						a(href="javascript:void(0);").block 取消
+					div.keepright.fr
+						a(href="javascript:void(0);").block 保存为新地址
+		include foot.jade
+script(src='http://libs.baidu.com/jquery/2.1.4/jquery.min.js')
+script(src='../js/membercenter.js')
+script(src='../js/head.js')

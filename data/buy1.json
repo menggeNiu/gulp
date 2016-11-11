@@ -1,0 +1,19 @@
+{
+	"data":{
+		"bags":[
+			{
+				"src":"../imgs/bagg1.png",
+				"name":"麦塔单肩包",
+				"size":"均码",
+				"num":"1",
+				"total":"199"
+			},
+			{
+				"src":"../imgs/bagg2.png",
+				"size":"均码",
+				"num":"1",
+				"total":"349"
+			}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+$(document).scroll(function(){
+	if($(this).scrollTop()>=288){
+		console.log('a')
+		$('.title').addClass('fix');
+	}else{
+		$('.title').removeClass('fix');
+	}
+});
+if($(this).scrollTop()>=288){
+		console.log('a')
+		$('.title').addClass('fix');
+	}else{
+		$('.title').removeClass('fix');
+	}
